@@ -5,7 +5,7 @@ import zhconv
 
 
 with open("test.mp3","rb") as audio_file:
-    openai.api_key = "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"
+    openai.api_key = ""
     model_id="whisper-1"
     transcript = openai.Audio.transcribe("whisper-1", audio_file)
     word=str(transcript['text'].replace(' ',"\n"))
